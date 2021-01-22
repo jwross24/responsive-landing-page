@@ -214,6 +214,11 @@ h1,
   font-size: 3.6rem;
 }
 
+h4,
+.h4 {
+  font-size: 1.8rem;
+}
+
 /** Header properties **/
 #header {
   padding: 14px 0;
@@ -242,12 +247,28 @@ h1,
   }
 }
 
+.mb-10 {
+  margin-bottom: 10px;
+}
+
 .pt-20 {
   padding-top: 20px;
 }
 
 .pb-20 {
   padding-bottom: 20px;
+}
+
+.pb-30 {
+  padding-bottom: 30px;
+}
+
+.pb-60 {
+  padding-bottom: 60px;
+}
+
+.text-center {
+  text-align: center;
 }
 
 /**********************
@@ -346,12 +367,6 @@ h1,
   width: 100%;
 }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 -15px;
-}
-
 .section-gap {
   padding: 120px 0;
 }
@@ -397,4 +412,12 @@ h1,
   .banner-content h1 {
     font-size: 3.2rem;
   }
+}
+
+.single-offer .desc {
+  margin-left: 12px;
+}
+
+.single-offer h4 {
+  margin-bottom: 15px;
 }
