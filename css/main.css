@@ -111,6 +111,8 @@ body {
 ol,
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 blockquote,
 q {
@@ -136,12 +138,6 @@ body {
   line-height: 1.625em;
   position: relative;
   display: block;
-}
-
-ol,
-ul {
-  margin: 0;
-  padding: 0;
 }
 
 select {
@@ -186,6 +182,38 @@ html {
   font-size: 62.5%;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Raleway', sans-serif;
+  color: #222222;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-weight: 600;
+  line-height: 1.5em;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: 'Raleway', sans-serif;
+  color: #222222;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-weight: 600;
+}
+
+h1,
+.h1 {
+  font-size: 3.6rem;
+}
+
 /** Header properties **/
 #header {
   padding: 14px 0;
@@ -214,6 +242,14 @@ html {
   }
 }
 
+.pt-20 {
+  padding-top: 20px;
+}
+
+.pb-20 {
+  padding-bottom: 20px;
+}
+
 /**********************
 * Nav Menu Properties *
 **********************/
@@ -221,11 +257,12 @@ html {
 .nav-menu * {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .nav-menu ul {
   position: absolute;
-  margin-top: 16px;
+  margin: 16px 0 0 0;
   padding: 10px;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   background: #fff;
@@ -305,8 +342,59 @@ html {
   margin: 0 auto;
 }
 
+.container.fullwidth {
+  width: 100%;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
   margin: 0 -15px;
+}
+
+.section-gap {
+  padding: 120px 0;
+}
+
+.banner-area {
+  background: url(https://picsum.photos/id/496/1920/900.jpg) center;
+  background-size: cover;
+}
+
+.row.fullwidth.d-flex.align-items-center.justify-content-center {
+  min-height: 100vh;
+}
+
+.banner-content {
+  margin-top: -90px;
+  text-align: center;
+}
+
+.banner-content h1 {
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 1em;
+  margin-top: 20px;
+}
+
+.banner-content p {
+  color: #222;
+}
+
+@media (max-width: 1199.98px) {
+  .banner-content h1 {
+    font-size: 4.5rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .banner-content h1 {
+    font-size: 3.6rem;
+  }
+}
+
+@media (max-width: 414px) {
+  .banner-content h1 {
+    font-size: 3.2rem;
+  }
 }
