@@ -421,3 +421,16 @@ h4,
 .single-offer h4 {
   margin-bottom: 15px;
 }
+
+.home-video-area {
+  background-color: #f9f9ff;
+}
+
+.container.no-padding {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.no-padding {
+  padding: 0;
+}
