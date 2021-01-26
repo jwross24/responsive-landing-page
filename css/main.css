@@ -99,7 +99,7 @@ h4,
 }
 
 #header.header-scrolled {
-  background: #fff;
+  background: white;
   box-shadow: -15px 15px 30px 0 rgba(133, 133, 133, 0.3);
   transition: all 0.5s;
 }
@@ -162,7 +162,7 @@ h4,
   margin: 16px 0 0 0;
   padding: 10px;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-  background: #fff;
+  background: white;
   display: none;
   top: 100%;
   left: 0;
@@ -338,7 +338,7 @@ h4,
 }
 
 .home-about-us-area .about-right p span {
-  color: #fff;
+  color: white;
   font-weight: 500;
 }
 
