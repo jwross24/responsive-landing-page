@@ -230,6 +230,12 @@ h4,
   z-index: 997;
 }
 
+#header.header-scrolled {
+  background: #fff;
+  box-shadow: -15px 15px 30px 0 rgba(133, 133, 133, 0.3);
+  transition: all 0.5s;
+}
+
 @media (max-width: 673px) {
   #logo {
     margin-left: 20px;
@@ -350,21 +356,13 @@ h4,
 }
 
 .nav-menu ul li:hover > a {
-  color: #df003a;
-}
-
-.nav-menu ul ul {
-  margin: 0;
+  color: #615cfd;
 }
 
 .container {
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
-}
-
-.container.fullwidth {
-  width: 100%;
 }
 
 .section-gap {
@@ -374,10 +372,6 @@ h4,
 .banner-area {
   background: url(https://picsum.photos/id/496/1920/900.jpg) center;
   background-size: cover;
-}
-
-.row.fullwidth.d-flex.align-items-center.justify-content-center {
-  min-height: 100vh;
 }
 
 .banner-content {
@@ -426,6 +420,25 @@ h4,
   background-color: #f9f9ff;
 }
 
+.video-area {
+  padding: 200px 0;
+  position: relative;
+  background: url(https://picsum.photos/1140/600.jpg) no-repeat center
+    center/cover;
+  background-color: #f9f9ff;
+}
+
+.video-area .overlay-bg {
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0.6;
+}
+
+.video-area .video-content {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
 .container.no-padding {
   padding-left: 0;
   padding-right: 0;
@@ -445,7 +458,7 @@ h4,
 }
 
 .video-right .top-title {
-  color: #df003a;
+  color: #615cfd;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 1.2rem;
