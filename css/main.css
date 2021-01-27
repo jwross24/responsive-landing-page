@@ -8,6 +8,13 @@ body {
   display: block;
 }
 
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 select {
   display: block;
 }
@@ -486,4 +493,72 @@ h4,
 
 .call-to-action-area .overlay-bg {
   background: rgba(4, 9, 30, 0.6);
+}
+
+.single-price {
+  background-color: white;
+}
+
+.single-price .top-section,
+.single-price .bottom-section {
+  padding: 40px 40px 22px 40px;
+  border-bottom: 1px solid #eee;
+  transition: all 0.3s ease 0s;
+}
+
+.single-price .top-section br,
+.single-price .bottom-section br {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .single-price .top-section br,
+  .single-price .bottom-section br {
+    display: block;
+  }
+}
+
+.single-price .end-section {
+  padding: 40px 40px 22px 40px;
+  background-color: #f9f9ff;
+  transition: all 0.3s ease 0s;
+}
+
+.single-price .end-section ul li {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 990px) {
+  .single-price {
+    margin-bottom: 30px;
+  }
+
+  .single-price .bottom-section,
+  .single-price .end-section {
+    text-align: center;
+  }
+}
+
+.single-price .price-button {
+  color: white;
+  background-color: #615cfd;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.single-price .price-button:hover {
+  cursor: pointer;
+}
+
+.single-price:hover .bottom-section,
+.single-price:hover .end-section {
+  color: white;
+  background-color: #615cfd;
+  box-shadow: 0px 20px 20px 0px rgba(157, 157, 157, 0.5);
+}
+
+.single-price:hover .price-button {
+  color: white;
+  background-color: #222;
+  border-color: transparent;
 }
