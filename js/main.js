@@ -16,4 +16,28 @@ $(document).ready(function () {
       $('#header').removeClass('header-scrolled');
     }
   });
+
+  // Tiny Slider for testimonial carousel
+  let slider = tns({
+    container: '.active-testimonial-carousel',
+    items: 3,
+    autoplay: true,
+    autoplayButtonOutput: false,
+    controls: false,
+    navPosition: 'bottom',
+    responsive: {
+      0: {
+        items: 1,
+      },
+      480: {
+        items: 1,
+      },
+      768: {
+        items: 2,
+      },
+      900: {
+        items: 3,
+      },
+    },
+  });
 });
