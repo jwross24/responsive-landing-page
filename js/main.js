@@ -1,12 +1,8 @@
 $(document).ready(function () {
   'use strict';
 
-  const window_height = window.innerHeight,
-    header_height = $('.default-header').height(),
-    fitScreen = window_height - header_height;
-
+  const window_height = window.innerHeight;
   $('.fullscreen').css('height', window_height);
-  $('.fitscreen').css('height', fitScreen);
 
   // Magnific Popup helpers
   $('.play-button').magnificPopup({
