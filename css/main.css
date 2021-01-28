@@ -190,7 +190,8 @@ h4,
   margin-left: 10px;
 }
 
-.nav-menu li:hover > ul {
+.nav-menu li:hover > ul,
+.nav-menu li.sfHover > ul {
   display: block;
 }
 
@@ -198,6 +199,20 @@ h4,
   min-width: 180px;
   text-align: left;
   transition: 0.3s;
+}
+
+/* Nav Menu Arrows with Superfish */
+.sf-arrows .sf-with-ul {
+  padding-right: 30px;
+}
+
+.sf-arrows .sf-with-ul:after {
+  content: '\f107';
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  position: absolute;
+  right: 15px;
 }
 
 #nav-menu-container {

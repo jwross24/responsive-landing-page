@@ -16,6 +16,14 @@ $(document).ready(function () {
     },
   });
 
+  // Use Superfish on the nav menu
+  $('.nav-menu').superfish({
+    animation: {
+      opacity: 'show',
+    },
+    speed: 300,
+  });
+
   // Header scroll class
   $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
