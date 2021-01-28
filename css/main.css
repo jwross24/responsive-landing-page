@@ -638,3 +638,31 @@ h4,
 .tns-item {
   height: inherit;
 }
+
+.blog-area .single-blog img {
+  border-radius: 5px;
+}
+
+.blog-area .single-blog .tags {
+  margin: 20px 0;
+}
+
+.blog-area .single-blog .tags li {
+  display: inline-block;
+  background: #615cfd;
+  border: 1px solid transparent;
+}
+
+.blog-area .single-blog .tags li a {
+  color: white;
+  padding: 10px;
+}
+
+.blog-area .single-blog .tags li:hover {
+  background-color: white;
+  border: 1px solid #eee;
+}
+
+.blog-area .single-blog .tags li:hover a {
+  color: #222;
+}
