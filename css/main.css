@@ -547,15 +547,15 @@ h4,
   margin-bottom: 20px;
 }
 
-@media (max-width: 990px) {
+@media (max-width: 800px) {
   .single-price {
     margin-bottom: 30px;
   }
+}
 
-  .single-price .bottom-section,
-  .single-price .end-section {
-    text-align: center;
-  }
+.single-price .bottom-section,
+.single-price .end-section {
+  text-align: center;
 }
 
 .single-price .price-button {
