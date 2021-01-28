@@ -9,6 +9,13 @@ $(document).ready(function () {
   $('.fitscreen').css('height', fitScreen);
 
   // Magnific Popup helpers
+  $('.play-button').magnificPopup({
+    type: 'iframe',
+    mainClass: 'mfp-fade',
+    preloader: false,
+    removalDelay: 150,
+  });
+
   $('.img-pop-up').magnificPopup({
     type: 'image',
     gallery: {
@@ -41,6 +48,7 @@ $(document).ready(function () {
     autoplayButtonOutput: false,
     controls: false,
     navPosition: 'bottom',
+    mouseDrag: 'true',
     responsive: {
       0: {
         items: 1,
