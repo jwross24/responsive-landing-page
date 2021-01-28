@@ -666,3 +666,150 @@ h4,
 .blog-area .single-blog .tags li:hover a {
   color: #222;
 }
+
+.footer-area {
+  padding-top: 100px;
+  background-color: #222;
+}
+
+.footer-area .footer-nav li {
+  margin-top: 8px;
+}
+
+.footer-area .footer-nav li a {
+  color: white;
+}
+
+.footer-area .footer-nav li a:hover {
+  color: #615cfd;
+}
+
+.footer-area .primary-button {
+  color: white;
+  background-color: #615cfd;
+  padding-left: 30px;
+  padding-right: 60px;
+  border: none;
+  border-radius: 25px;
+}
+
+.footer-area .primary-button:focus {
+  outline: none;
+}
+
+.footer-area .primary-button i {
+  top: 50%;
+  right: 30px;
+  position: absolute;
+  transform: translateY(-60%);
+  transition: all 0.3s ease 0s;
+}
+
+.footer-area .primary-button:hover i {
+  right: 20px;
+}
+
+.footer-area h6 {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.footer-widget {
+  color: white;
+}
+
+.footer-widget input {
+  color: #777;
+  background: white;
+  border: none;
+  border-radius: 20px;
+  width: 100%;
+  line-height: 38px;
+  padding-left: 12px;
+  font-weight: 300;
+}
+
+@media (max-width: 990px) {
+  .footer-widget .submit-button {
+    margin-top: 20px;
+  }
+
+  .footer-widget .newsletter {
+    padding-bottom: 40px;
+  }
+}
+
+.footer-widget .info {
+  margin-top: 122px;
+  position: absolute;
+}
+
+.footer-widget .info.valid {
+  color: green;
+}
+
+.footer-widget .info.error {
+  color: red;
+}
+
+.ig-feed {
+  margin: -5px;
+}
+
+.ig-feed li {
+  width: 25%;
+  overflow: hidden;
+}
+
+.ig-feed li img {
+  margin: 5px;
+}
+
+.footer-text i,
+.footer-text a {
+  color: #615cfd;
+}
+
+.footer-social {
+  text-align: right;
+}
+
+.footer-social a {
+  background: #111;
+  width: 40px;
+  height: 40px;
+  display: inline-table;
+  text-align: center;
+  padding-top: 10px;
+  transition: all 0.3s ease 0s;
+}
+
+.footer-social i {
+  color: #ccc;
+  transition: all 0.3s ease 0s;
+}
+
+.footer-social a:hover {
+  background-color: #615cfd;
+}
+
+.footer-social a:hover i {
+  color: white;
+}
+
+@media (max-width: 991.98px) {
+  .footer-widget {
+    margin-bottom: 30px;
+  }
+
+  .footer-social {
+    text-align: left;
+    margin-top: 20px;
+  }
+}
+
+.footer-bottom {
+  padding-top: 80px;
+}
