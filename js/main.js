@@ -8,6 +8,14 @@ $(document).ready(function () {
   $('.fullscreen').css('height', window_height);
   $('.fitscreen').css('height', fitScreen);
 
+  // Magnific Popup helpers
+  $('.img-pop-up').magnificPopup({
+    type: 'image',
+    gallery: {
+      enabled: true,
+    },
+  });
+
   // Header scroll class
   $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
