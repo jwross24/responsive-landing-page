@@ -45,13 +45,13 @@ $(document).ready(function () {
       .find('.menu-has-children')
       .prepend('<i class="fas fa-chevron-down"></i>');
 
-    $(document).on('click', '.menu-has-children i', function (e) {
+    $(document).on('click', '.menu-has-children i', function () {
       $(this).next().toggleClass('menu-item-active');
       $(this).nextAll('ul').eq(0).slideToggle();
       $(this).toggleClass('fa-chevron-down fa-chevron-up');
     });
 
-    $(document).on('click', '#mobile-nav-toggle', function (e) {
+    $(document).on('click', '#mobile-nav-toggle', function () {
       $('body').toggleClass('mobile-nav-active');
       $('#mobile-nav-toggle i').toggleClass('fa-window-close fa-bars');
       $('#mobile-body-overlay').toggle();
@@ -103,5 +103,62 @@ $(document).ready(function () {
         items: 3,
       },
     },
+  });
+
+  // Smooth scroll for nav and link items
+  $('.nav-menu a, #mobile-nav a, .scrollto').on('click', function () {
+    if (
+      location.pathname.replace(/^\//, '') ==
+        this.pathname.replace(/^\//, '') &&
+      location.hostname == this.hostname
+    ) {
+      let target = $(this.hash);
+      if (target.length) {
+        let top_space = 0;
+
+        if ($('#header').length) {
+          top_space = $('#header').outerHeight();
+        }
+
+        $('html, body').animate(
+          {
+            scrollTop: target.offset().top - top_space,
+          },
+          1500,
+          'easeInOutExpo',
+        );
+
+        if ($(this).parents('.nav-menu').length) {
+          $('.nav-menu .menu-active').removeClass('menu-active');
+          $(this).closest('li').addClass('menu-active');
+        }
+
+        if ($('body').hasClass('mobile-nav-active')) {
+          $('body').removeClass('mobile-nav-active');
+          $('#mobile-nav-toggle i').toggleClass('fa-window-close fa-bars');
+          $('#mobile-body-overlay').fadeOut();
+        }
+        return false;
+      }
+    }
+  });
+
+  $(document).ready(function () {
+    $('html, body').hide();
+
+    if (window.location.hash) {
+      setTimeout(function () {
+        $('html, body').scrollTop(0).show();
+
+        $('html, body').animate(
+          {
+            scrollTop: $(window.location.hash).offset().top,
+          },
+          1000,
+        );
+      }, 0);
+    } else {
+      $('html, body').show();
+    }
   });
 });
