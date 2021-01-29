@@ -394,7 +394,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .banner-area {
-  background: url(https://picsum.photos/id/496/1920/900.jpg) center;
+  background: url(../img/header-background.jpg) center;
   background-size: cover;
 }
 
