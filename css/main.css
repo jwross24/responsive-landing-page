@@ -94,6 +94,16 @@ h1,
   font-size: 3.6rem;
 }
 
+h2,
+.h2 {
+  font-size: 3rem;
+}
+
+h3,
+.h3 {
+  font-size: 2.4rem;
+}
+
 h4,
 .h4 {
   font-size: 1.8rem;
@@ -143,6 +153,10 @@ h4,
 
 .pt-20 {
   padding-top: 20px;
+}
+
+.pt-100 {
+  padding-top: 100px;
 }
 
 .pb-20 {
@@ -945,4 +959,39 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .footer-bottom {
   padding-top: 80px;
+}
+
+.info-banner {
+  background-color: #615cfd;
+  text-align: center;
+}
+
+.info-banner .height {
+  height: 600px;
+}
+
+@media (max-width: 767.98px) {
+  .info-banner .height {
+    height: 400px;
+  }
+}
+
+.info-banner .info-banner-content h2 {
+  line-height: 1.2em;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 991.98px) {
+  .info-banner .info-banner-content h2 br {
+    display: none;
+  }
+}
+
+.info-banner .info-banner-content p {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.about-info-area p {
+  margin-bottom: 20px;
 }
