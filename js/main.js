@@ -106,7 +106,7 @@ $(document).ready(function () {
   });
 
   // Smooth scroll for nav and link items
-  $('.nav-menu a, #mobile-nav a, .scrollto').on('click', function () {
+  $('.nav-menu a, #mobile-nav a').on('click', function () {
     if (
       location.pathname.replace(/^\//, '') ==
         this.pathname.replace(/^\//, '') &&
